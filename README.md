@@ -16,6 +16,7 @@ Predicting if an employee will purchase an suv given their age and salary using 
 ## evaluating model with confusion matrix
 
 conf_matrix = confusion_matrix(y_test,y_pred)
+
 print(conf_matrix)
 
 array([[79,  6],
@@ -23,12 +24,14 @@ array([[79,  6],
        
 ## accuracy
 accuracy = (79+38)/len(y_test)
+
 print(accuracy)
 
 0.8731343283582089
 
 ## misclassification rate
 mis_cla_rate  = (11+6)/len(y_test)
+
 print(mis_cla_rate)
 
 0.12686567164179105
